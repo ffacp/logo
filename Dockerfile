@@ -4,7 +4,7 @@ MAINTAINER  Florian Fröhlich
 RUN opkg-install uhttpd
 RUN printf '#!/bin/sh\nset -e\n\nchmod 755 /www\nexec /usr/sbin/uhttpd $*\n' > /usr/sbin/run_uhttpd && chmod 755 /usr/sbin/run_uhttpd
 
-RUN mkdir /www && chown 1001:1001 /www
+RUN mkdir /www && chown 1001:1001 /www -R
 COPY ./www /www/
 RUN chmod 777 /www -R
 
