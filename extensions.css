@@ -1,0 +1,14 @@
+#header-logo {
+   background: url("resized_swslogo.png");
+   width: 193px;
+   height: 41px;
+   margin-top: -3px;
+   background-repeat: no-repeat
+}
+
+#openshift-logo.navbar-brand{
+   width: 193px;
+   height: 42px;
+   padding-left: 20px;
+   padding-top: 10px;
+}
