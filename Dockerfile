@@ -1,6 +1,4 @@
-FROM        pierrezemb/gostatic:latest
-MAINTAINER  Florian Fröhlich
-
+FROM        pierrezemb/gostatic
 COPY ./www /srv/http/
 
 
