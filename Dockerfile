@@ -6,7 +6,7 @@ RUN printf '#!/bin/sh\nset -e\n\nchmod 755 /www\nexec /usr/sbin/uhttpd $*\n' > /
 
 RUN mkdir /www
 COPY ./www /www/
-RUN chown 777 /www -R
+RUN chmod 777 /www -R
 
 EXPOSE 8080
 
